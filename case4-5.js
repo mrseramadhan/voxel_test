@@ -41,4 +41,4 @@ function bb_sort(parameter)
 	return param
 }
 
-console.log(bb_sort([0, 2, 4, 5, 8, 9, 11, 15]))
+console.log(bb_sort([4, 5, 8, 9, 0, 2, 8, 2, 11, 15, 2, 9, 0]))

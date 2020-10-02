@@ -5,4 +5,4 @@ CREATE TABLE `voxel`.`ms_jabatan1` ( `id` INT NOT NULL ,  `nama_jabatan` VARCHAR
 ALTER TABLE `tr_jabatan1` ADD FOREIGN KEY (`id_jabatan`) REFERENCES `tr_jabatan1`(`id`) ON DELETE CASCADE ON UPDATE CASCADE;
 ALTER TABLE `tr_jabatan1` ADD FOREIGN KEY (`id_user`) REFERENCES `user1`(`id`) ON DELETE CASCADE ON UPDATE CASCADE;
 
-SELECT 
+SELECT * FROM user1 a LEFT JOIN tr_jabatan1 b ON a.id = b.id_user LEFT JOIN ms_jabatan c ON b.id_jabatan = c.id WHERE b.aktif = 1
